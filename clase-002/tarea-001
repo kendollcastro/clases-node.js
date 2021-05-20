@@ -1,0 +1,8 @@
+const promedioFuncion = (num1, num2, num3) => {
+
+    const promedio = num1 + num2 + num3 / 3;
+
+    return `El promedio de esos tres numeros es: ${promedio}`;
+}
+
+console.log(promedioFuncion(3, 4, 3));

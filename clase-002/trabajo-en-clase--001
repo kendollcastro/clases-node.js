@@ -1,0 +1,11 @@
+function numeroFactorial (n) {
+ let total = 1;
+ for (i = 1; i <= n; i++) {
+    total = total * i;
+    }
+  return 'El factorial del numero es: ' + total;
+ }
+ 
+console.log(factorial(6));
+
+console.log(factorial(0));

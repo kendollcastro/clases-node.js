@@ -1,0 +1,7 @@
+const calculoNumero = (num) => {
+
+    const suma = num * (num + 1) / 2;
+    return suma;
+}
+
+console.log(calculoNumero(6));
