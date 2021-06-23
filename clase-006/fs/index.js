@@ -1,5 +1,5 @@
 const fs = require('fs')
-let path = process.cwd();
+let path = process.cwd(); //Devuelve la ruta actual donde nos encontramos
 
 const user = {
     "id": 1,
@@ -7,7 +7,7 @@ const user = {
     "age": 22
 };
 
-/*
+
 //Conver JSON object to string
 const data = JSON.stringify(user);
 
@@ -22,7 +22,7 @@ fs.appendFile(`${path}/holamundo.txt`, "Hola Mundo\ny grupo ", function(err, dat
     if(err)
         return console.error(err)
     console.log("Se ha actualizado el archivo")
-});*/
+});
 
 /*//Lee el archivo
 fs.readFile(`${path}/holamundo.txt`, 'utf8', function(err, data){
@@ -32,7 +32,7 @@ fs.readFile(`${path}/holamundo.txt`, 'utf8', function(err, data){
     console.log(data)
 })*/
 
-/*
+
 //Me permite abrir un archivo
 fs.open(`${path}/nuevoarchivo.txt`, 'w', function(err, fd){
     if(err)
@@ -41,7 +41,7 @@ fs.open(`${path}/nuevoarchivo.txt`, 'w', function(err, fd){
         if(err)
             return console.error(err)
     })
-})*/
+})
 
 //Me permite eliminar o borrar un archivo
 fs.unlink(`${path}/nuevoarchivo.txt`, function(err){
