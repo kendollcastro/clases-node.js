@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose'); // Para conectar con la base de datos
 const userRoute = require('./routes/user.route');
+const favoriteMusicRoute = require ('./routes/favoriteMusic.route');
 const app = express();
 
 
@@ -21,6 +22,7 @@ app.use(express.urlencoded({ // utilizamos el use, para validar esa informacion,
 
 //Para que realize una acciones, hay que crear controladores.
 app.use('/', userRoute);
+app.use('/', favoriteMusicRoute);
 
 app.use('*', (req, res) => { //* cualquier path que no sea el de arriba por ejemplo /user
     res.status(404) //Necistamos devolver el status code.

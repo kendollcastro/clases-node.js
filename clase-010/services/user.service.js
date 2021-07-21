@@ -25,4 +25,23 @@ userService.getUsers = async function (){
     }
 }
 
+userService.getUser = async function ({id}) {
+    try {
+        const user =  await User.findById(id) //Buscar el usuario por medio del id
+        return user;
+    } catch (e) {
+        throw new Error ('Error while returning Users')
+    }
+}
+
+userService.updateUser = async function ({id}, {name, email}) {
+    try {
+        const user = await User.findById(id);
+        const updateUser = await user.set({name, email}) //user.set = para setearle los valores 
+        await updateUser.save();
+        return updateUser;
+    } catch (e) {
+        throw new Error ('Error while update user') // Disparar un error hacia la capa que esta mas arriba
+    }
+}
 module.exports = userService;
