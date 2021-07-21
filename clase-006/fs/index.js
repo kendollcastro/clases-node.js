@@ -1,4 +1,4 @@
-const fs = require('fs')
+const fs = require('fs') //Siempre importa un modulo de fs de node
 let path = process.cwd(); //Devuelve la ruta actual donde nos encontramos
 
 const user = {

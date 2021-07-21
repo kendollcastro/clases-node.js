@@ -11,8 +11,8 @@ app.use(express.urlencoded({
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname+'/public/index.html'))  //Dirname: da la direccion donde esta ubicado actualmente
 })
-app.get('/about', (req, res) => {
-    res.sendFile(path.join(__dirname+'/public/about.html'))
+app.get('/about', (req, res) => { // Lo que est en la ruta es lo lo que se va a mapear en la url
+    res.sendFile(path.join(__dirname+'/public/about.html')) // dirname: me da la direccion url de donde estoy ubicado, lo que esta en anaranjado es el archivo donde esta ubicado
 })
 
 

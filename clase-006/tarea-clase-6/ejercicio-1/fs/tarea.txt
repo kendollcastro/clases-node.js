@@ -1,6 +1,0 @@
-nombre: Oliver, apellido: Brown, edad: 20,
-nombre: Jack, apellido: Murphy, edad: 35,
-nombre: Charlie, apellido: Rodriguez, edad: 38,
-nombre: George, apellido: Smith, edad: 22,
-nombre: James, apellido: Anderson, edad: 23,
-nombre: William, apellido: Walsh, edad: 25
