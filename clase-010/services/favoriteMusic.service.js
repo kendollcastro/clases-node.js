@@ -40,7 +40,6 @@ favoriteMusicService.upsertFavoriteMusic = async function ({idUser, songs}) {
         if (user) {
             return await updateFavoriteMusic(user, songs)
         } 
-
         return await createFavoriteMusic (idUser, songs);
     } catch (e) {
         throw new Error('Error while Favorite Music')

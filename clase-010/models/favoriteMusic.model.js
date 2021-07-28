@@ -10,5 +10,5 @@ const FavoriteMusicSchema = mongoose.Schema({
     songs: [String]
 }, {versionKey: false});
 
-const favoriteMusicSchema = mongoose.model('FavoriteMusic', FavoriteMusicSchema) // Para decirle como va a estar construido
-module.exports = favoriteMusicSchema; //Exportamos el modulo
+const FavoriteMusic = mongoose.model('FavoriteMusic', FavoriteMusicSchema) // Para decirle como va a estar construido
+module.exports = FavoriteMusic; //Exportamos el modulo ***********

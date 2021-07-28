@@ -11,4 +11,4 @@ FavoriteMusicController.upsert = async function ( req, res, next ) {
     }
 }
 
-module.exports = FavoriteMusicController
+module.exports = FavoriteMusicController;
